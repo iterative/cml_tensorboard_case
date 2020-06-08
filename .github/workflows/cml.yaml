@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name:cml_run
+      - name: cml_run
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           TB_CREDENTIALS: ${{ secrets.TB_CREDENTIALS }}
