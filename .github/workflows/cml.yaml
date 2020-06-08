@@ -21,4 +21,4 @@ jobs:
           cml-tensorboard-dev --logdir logs --md --name "Go to tensorboard" >> report.md
           cml-send-comment report.md
           python train.py
-          cml-send-comment report.md
+
