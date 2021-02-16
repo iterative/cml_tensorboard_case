@@ -11,7 +11,7 @@ jobs:
       - uses: iterative/setup-cml@v1
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: '3.6'
 
       - name: "Training job"
         env:
