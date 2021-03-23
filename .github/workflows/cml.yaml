@@ -18,7 +18,7 @@ jobs:
       - name: cml
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          TB_CREDENTIALS: "pOyAuU2yq2arsM98Bw5hwYtr"
+          TB_CREDENTIALS: ${{ secrets.TB_CREDENTIALS }}
         run: |
           pip install -r requirements.txt
           cml-tensorboard-dev --logdir logs --md --name "Go to tensorboard" >> report.md
