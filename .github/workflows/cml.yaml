@@ -18,7 +18,7 @@ jobs:
       - name: cml
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          TB_CREDENTIALS: ${{ secrets.TB_CREDENTIALS }}
+          TB_CREDENTIALS: {"refresh_token": "1//09HIazPBIy3FuCgYIARAAGAkSNwF-L9IrggUrJ-jbOev4jM4ZbTWZajvP-yEKb9Qyzf9v7i86F3Dq06wsgnEBqMBotIz6Ai9yjxo", "token_uri": "https://oauth2.googleapis.com/token", "client_id": "373649185512-8v619h5kft38l4456nm2dj4ubeqsrvh6.apps.googleusercontent.com", "client_secret": "pOyAuU2yq2arsM98Bw5hwYtr", "scopes": ["openid", "https://www.googleapis.com/auth/userinfo.email"], "type": "authorized_user"}
         run: |
           pip install -r requirements.txt
           cml-tensorboard-dev --logdir logs --md --name "Go to tensorboard" >> report.md
